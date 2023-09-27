@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa</title>
+    <style>
+        body {
+            text-align: center; 
+        }
+        h1, h2 {
+            margin-bottom: 20px; 
+        }
+        table {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mahasiswa 1</h1>
+    <img src="wa.jpeg" alt="Foto Mahasiswa">
+    <h2>Deskripsi Diri</h2>
+    <p>Perkenalkan nama saya Yosafatur Aprendy Panjaitan, saya biasa dipanggil Yosa. Saya lahir di Sukabumi, 30 April 2004. Saya berkuliah di Universitas Pendidikan Indonesia Kampus Purwakarta dan sekarang sudah semester 3. Hobi saya sejak kecil adalah bermain game.</p>
+    <h2>Data Diri</h2>
+    <table>
+        <tr>
+            <td>Nama</td>
+            <td>Yosafatur Aprendy Panjaitan</td>
+        </tr>
+        <tr>
+            <td>NIM</td>
+            <td>2202205</td>
+        </tr>
+        <tr>
+            <td>Jurusan</td>
+            <td>PSTI</td>
+        </tr>
+    </table>
+
+    <h2>Kontak</h2>
+    <form action="proses_kirim.php" method="post">
+        <table>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Negara</td>
+                <td>
+                    <select id="negara" name="negara">
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Singapura">Singapura</option>
+                        <option value="Thailand">Thailand</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Pesan</td>
+                <td><textarea id="message" name="message" rows="4" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Kirim"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
